@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    
 }
 .container{
     background-color: rgb(178, 90, 66);
@@ -133,6 +134,17 @@
 }
 @keyframes aeroplane{
     100%{
-        transform: translateX(1000px);
+        transform: translateX(1000px) perspective(400vw);
     }
+    
+}
+.fb h1:hover{
+    width: 100px;
+    color: blue;
+    
+    cursor: pointer;
+
+}
+#loginbutton{
+    padding: 10px 10px;
 }
