@@ -92,17 +92,40 @@
     border-radius: 5px;
     
 }
+.signupBox button:active{
+    border: 1px solid pink ;
+    background-color: red;
+}
 .signupBox input {
     margin: 10px;
     box-sizing: 8px;
     height: 27px;
     width: 300px;
     font-size: 20px;
-    align-items: center;
+    align-items:center;
     justify-content: center;
 }
 .signupBox a{
     text-decoration: none;
     font-size: 18px;
     color:#4267B2 ;
+}
+
+.main img:hover{
+    transform: rotate(30deg) ;
+}
+
+.plane {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    animation: aeroplane 10s linear 4 ;
+
+}
+@keyframes aeroplane{
+    100%{
+        transform: translateX(1000px);
+    }
 }
