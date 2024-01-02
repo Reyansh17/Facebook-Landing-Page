@@ -7,9 +7,16 @@
     display: flex;
     height: 60px;
     align-items: center;
+    box-shadow: 5px 5px rgb(151, 82, 29);
 }
 .container .fb h1{
     color: white;
+   
+}
+
+.container .fb h1:hover::before{
+    content: " welcome to";
+    color: rgb(0, 255, 200);
 }
 .right{
     display: flex;
@@ -69,7 +76,7 @@
 .signupBox h2{
     color: #4267B2;
     font-size: 30px;
-
+   
 }
 .signupBox p{
     color:#4267B2 ;
@@ -122,7 +129,7 @@
     top: 40px;
     left: 0px;
     animation: aeroplane 10s linear 4 ;
-
+    z-index: -1;
 }
 @keyframes aeroplane{
     100%{
