@@ -1,12 +1,15 @@
 *{
     margin: 0px;
     padding: 0px;
+    
 }
 .container{
     background-color: rgb(178, 90, 66);
     display: flex;
     height: 60px;
     align-items: center;
+    width: 1000vh;
+ 
 }
 .container .fb h1{
     color: white;
@@ -69,6 +72,7 @@
 .signupBox h2{
     color: #4267B2;
     font-size: 30px;
+    z-index: 200;
 
 }
 .signupBox p{
@@ -121,11 +125,23 @@
     position: absolute;
     top: 40px;
     left: 0px;
-    animation: aeroplane 10s linear 4 ;
+    animation: aeroplane 10s linear infinite;
+    z-index: -1;
 
 }
 @keyframes aeroplane{
     100%{
-        transform: translateX(1000px);
+        transform: translateX(1000px) perspective(400vw);
     }
+    
+}
+.fb h1:hover{
+    width: 100px;
+    color: blue;
+    
+    cursor: pointer;
+
+}
+#loginbutton{
+    padding: 10px 10px;
 }
